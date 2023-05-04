@@ -1,0 +1,128 @@
+img{
+    width: 600px;
+    height: 628px;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background: black;
+    color: white;
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:relative;
+    z-index: 1;
+}
+.logo{
+    color: white;
+    text-decoration:none;
+    column-rule-color: beige;
+    font-size: 39px;
+    font-weight:bold ;
+    padding-top: 10px;
+    padding-left: 10%;
+}
+.nav_link{
+    text-align: right;
+    background: red;
+    padding: 10px 30px;
+    border-bottom-left-radius: 80px;   
+}
+.nav_link ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+.nav_link ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.nav_link ul li a:hover{
+color: black;
+}
+.left_side{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    background: black;
+}
+.row{
+    /* padding: 0 10%; */
+    display: flex;
+    align-items: flex-end;
+    justify-content:flex-start;
+    position: relative;
+    margin-top: 3%;
+}
+.left-col{
+    flex-basis: 10%;
+}
+.about{
+    padding: 4%;
+    flex-basis: 55%;
+}
+.left_col img{
+    width: 80%;
+    cursor: pointer;
+    filter: grayscale(0);
+    transition: filter 1s;
+}
+.left_col img:hover{
+    filter: grayscale(1);
+}
+.about h1{
+    font-style: 55px;
+    font-weight: 600;
+}
+.about p{
+    color:grey;
+    margin: 20px 0 70px;
+}
+.social_media{
+    display: flex;
+    margin-top: 30px;
+}
+.icon{
+    width: 100px;
+    height: 100px;
+    background: #555;
+    align-items: center;
+    display: flex;
+    position: relative;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.icon i{
+    width: 20px;
+}
+.icon a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background:red;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+.icon a:hover{
+    opacity:1;
+}
+.icon:hover{
+    transform: translateY(-20px);
+}
